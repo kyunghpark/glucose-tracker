@@ -8,5 +8,3 @@ class GlucoseReading(models.Model):
     timestamp = models.DateTimeField(null=True)
     recording_type = models.IntegerField(null=True)
     glucose_level = models.IntegerField(null=True)
-
-

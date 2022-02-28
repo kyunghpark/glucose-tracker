@@ -1,7 +1,10 @@
-import pandas as pd
-import sys, os, django
-from pathlib import Path
+import os
+import sys
 from glob import glob
+from pathlib import Path
+
+import django
+import pandas as pd
 import pytz
 
 sys.path.append(str(Path(__file__).parents[1]))
@@ -63,4 +66,4 @@ def upload_glucose_readings(path):
 if __name__ == "__main__":
     for file in glob(os.path.join("api/data", "*.csv")):
         upload_glucose_readings(file)
-        print(f'Upload of {file[9:]} successful.')
+        print(f"Upload of {file[9:]} successful.")

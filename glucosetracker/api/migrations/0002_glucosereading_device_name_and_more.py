@@ -6,38 +6,38 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('api', '0001_initial'),
+        ("api", "0001_initial"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='glucosereading',
-            name='device_name',
+            model_name="glucosereading",
+            name="device_name",
             field=models.CharField(max_length=255, null=True),
         ),
         migrations.AddField(
-            model_name='glucosereading',
-            name='device_serial',
+            model_name="glucosereading",
+            name="device_serial",
             field=models.CharField(max_length=255, null=True),
         ),
         migrations.AddField(
-            model_name='glucosereading',
-            name='glucose_level',
+            model_name="glucosereading",
+            name="glucose_level",
             field=models.IntegerField(null=True),
         ),
         migrations.AddField(
-            model_name='glucosereading',
-            name='recording_type',
+            model_name="glucosereading",
+            name="recording_type",
             field=models.IntegerField(null=True),
         ),
         migrations.AddField(
-            model_name='glucosereading',
-            name='timestamp',
+            model_name="glucosereading",
+            name="timestamp",
             field=models.DateTimeField(null=True),
         ),
         migrations.AddField(
-            model_name='glucosereading',
-            name='user_id',
+            model_name="glucosereading",
+            name="user_id",
             field=models.CharField(max_length=255, null=True),
         ),
     ]
