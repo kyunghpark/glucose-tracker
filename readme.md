@@ -13,7 +13,7 @@
 - `reading_id`: a unique id associated with a users glucose reading.
   - The endpoint is `api/v1/levels/reading/2400/` where `2400` is the `reading_id`.
 - `user_id`: an id unique to an patient, associated with one or more readings.
-  - The endpoint is `api/v1/levels/user/aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa/` where `aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa` is an example `user_id`.
+  - The endpoint is `api/v1/levels/user/aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa/` where `aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa` is the `user_id`.
 
 ## Assumptions
 - Glucose readings will record with the following fields: `user id`, `reading id`, `device name`, `device serial`, `timestamp`, `recording type` and `glucose level`.

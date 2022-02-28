@@ -63,3 +63,4 @@ def upload_glucose_readings(path):
 if __name__ == "__main__":
     for file in glob(os.path.join("api/data", "*.csv")):
         upload_glucose_readings(file)
+        print(f'Upload of {file[9:]} successful.')
